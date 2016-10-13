@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tans:</strong>
+  <%= @transaction.tans_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @transaction.name %>
+</p>
+
+<p>
+  <strong>Credit card:</strong>
+  <%= @transaction.credit_card %>
+</p>
+
+<p>
+  <strong>Bin:</strong>
+  <%= @transaction.bin %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @transaction.currency %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transaction.amount %>
+</p>
+
+<p>
+  <strong>Card schema:</strong>
+  <%= @transaction.card_schema %>
+</p>
+
+<p>
+  <strong>Card brand:</strong>
+  <%= @transaction.card_brand %>
+</p>
+
+<p>
+  <strong>Exp date:</strong>
+  <%= @transaction.exp_date %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>
